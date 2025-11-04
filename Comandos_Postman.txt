@@ -1,0 +1,30 @@
+------------POST-----------
+http://127.0.0.1:5000/livros
+---------------------------
+
+Body - raw - JSON
+{
+  "titulo": "O Pequeno Príncipe",
+  "autor": "Antoine de Saint-Exupéry",
+  "ano": 1943
+}
+
+------------GET-----------
+http://127.0.0.1:5000/livros
+http://127.0.0.1:5000/livros/1
+---------------------------
+
+------------UPDATE-----------
+http://127.0.0.1:5000/livros/1
+-----------------------------
+
+Body - raw - JSON
+{
+  "titulo": "O Pequeno Príncipe",
+  "autor": "Antoine de Saint-Exupéry",
+  "ano": 1945
+}
+
+------------DELETE-----------
+http://127.0.0.1:5000/livros/1?confirmacao=true
+-----------------------------
